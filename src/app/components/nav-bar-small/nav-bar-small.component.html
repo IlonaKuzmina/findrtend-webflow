@@ -1,0 +1,45 @@
+<ng-template #content let-offcanvas>
+  <div class="offcanvas-header">
+    <img
+      class="offcanvas-icon"
+      src="./../../../assets/Icon/Vector.svg"
+      alt="icon"
+    />
+    <button
+      class="btn__close"
+      (click)="offcanvas.dismiss('Cross click')"
+      type="button"
+    >
+      <img src="./../../../assets/Icon/icon.svg" alt="" />
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">How it work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Solution</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <app-button title="Register" color="white"></app-button>
+      </li>
+    </ul>
+  </div>
+</ng-template>
+
+<button class="navbar-toggler" type="button" (click)="openTop(content)">
+  <img src="./../../../assets/Icon/icon.png" alt="icon" />
+</button>

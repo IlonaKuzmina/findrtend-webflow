@@ -1,0 +1,33 @@
+.nav__container {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__bar {
+  background-color: transparent;
+  color: white;
+}
+
+.nav__image {
+  max-width: 170px;
+}
+
+.nav-link {
+  color: var(--off-white);
+}
+
+.active {
+  color: var(--primary) !important;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__container {
+    padding: 24px 18px;
+  }
+}

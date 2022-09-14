@@ -1,0 +1,13 @@
+.deal__container {
+    background-color: var(--black);
+    max-width: 1440px;
+    padding: 140px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .deal__container {
+      padding: 80px 8px;
+    }
+  }
+  

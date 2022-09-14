@@ -1,0 +1,35 @@
+.btn {
+  padding: 12px 32px;
+  border: none;
+  color: white;
+  border-radius: 40px;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.btn:hover {
+  color: var(--primary);
+}
+
+.btn--green {
+  background-color: var(--primary);
+}
+
+.btn--white {
+  background-color: var(--off-white);
+  color: var(--black);
+  transition: 0.8s;
+}
+
+.btn--white:hover {
+  background-color: var(--grey-1);
+  color: var(--off-white);
+}
+
+.btn--black{
+    background-color: var(--black);;
+}
+
+.btn--black:hover{
+  background-color: var(--black-2);
+}

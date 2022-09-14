@@ -1,0 +1,6 @@
+.link__wrapper{
+    background: var(--off-white);
+    border-radius: 8px;
+    width: min-content;
+    padding: 32px;
+}

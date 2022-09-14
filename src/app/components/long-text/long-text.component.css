@@ -1,0 +1,29 @@
+.text__container {
+  max-width: 1440px;
+  padding: 140px;
+  margin: 0 auto;
+}
+
+.long__text {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+  color: var(--black);
+}
+
+.long__text--grey {
+  color: var(--grey-2);
+}
+
+@media screen and (max-width: 768px) {
+  .long__text {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .text__container {
+    padding: 80px 8px;
+  }
+}

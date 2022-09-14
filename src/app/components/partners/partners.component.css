@@ -1,0 +1,11 @@
+.partners__container {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+@media screen and (max-width: 768px) {
+  .partners__container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}

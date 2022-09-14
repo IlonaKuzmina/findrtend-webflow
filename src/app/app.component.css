@@ -1,0 +1,5 @@
+.dark__container {
+  background-image: url("../assets/Bg-hero/mobile.png");
+  max-width: 1440px;
+  margin: 0 auto;
+}

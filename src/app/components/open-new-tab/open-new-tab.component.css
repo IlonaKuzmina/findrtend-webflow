@@ -1,0 +1,12 @@
+.open__container {
+  background-color: var(--primary);
+  max-width: 1440px;
+  padding: 140px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .open__container {
+    padding: 80px 8px;
+  }
+}

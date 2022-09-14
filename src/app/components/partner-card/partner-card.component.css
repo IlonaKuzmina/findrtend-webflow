@@ -1,0 +1,21 @@
+.partner__container {
+  background-color: var(--grey-3);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  margin: 16px 0;
+  min-height: 74px;
+}
+
+.partner__image {
+  width: 80%;
+  padding: 10% 0%;
+}
+
+@media screen and (max-width: 768px) {
+  .partner__container {
+    height: 74px;
+    margin: 8px 0;
+  }
+}

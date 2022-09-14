@@ -1,0 +1,34 @@
+.offcanvas.offcanvas-top {
+  height: fit-content;
+  background-color: var(--black);
+  color: var(--off-white);
+  text-align: center;
+  padding: 24px 8px;
+}
+
+.offcanvas-body{
+    margin: 30px 0 30px;
+}
+
+.btn-close {
+  color: var(--off-white);
+  background-color: aliceblue;
+}
+
+.nav-item {
+    padding: 12px;
+}
+
+.offcanvas-icon {
+  width: 40px;
+}
+
+.btn__close {
+  background-color: transparent;
+  border: none;
+}
+
+.nav-link {
+  font-size: 18px;
+  line-height: 100%;
+}

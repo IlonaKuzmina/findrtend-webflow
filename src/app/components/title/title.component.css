@@ -1,0 +1,16 @@
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+  color: var(--black);
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 900;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,30 @@
+.join__container {
+  background-color: var(--primary);
+  max-width: 1440px;
+  padding: 140px 350px;
+  margin: 0 auto;
+}
+
+.join__paragraph,
+.join__paragraph--light {
+  font-size: 72px;
+  color: var(--black);
+  font-weight: 900;
+  line-height: 112%;
+}
+
+.join__paragraph--light {
+  color: var(--green-2);
+}
+
+@media screen and (max-width: 1000px) {
+  .join__container {
+    padding: 80px 8px;
+  }
+
+  .join__paragraph,
+.join__paragraph--light {
+  font-size: 36px;
+}
+
+}
