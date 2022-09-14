@@ -1,6 +1,16 @@
-<div class="links__container">
-    <div class="link__wrapper">
-        <img src="./../../../assets/Images/Social media/social media1.png" alt="">
+<section class="product">
+  <div class="container__fluid">
+    <div class="slider__wrapper">
+      <div class="slider__main">
+        <div *ngFor="let platform of platforms" class="item">
+          <div class="link__wrapper">
+            <img src="{{ platform.image }}" alt="{{ platform.name }}" />
+          </div>
+        </div>
+        <div class="btn__area">
+          <button class="next__btn" appNextBtn>x</button>
+        </div>
+      </div>
     </div>
-
-</div>
+  </div>
+</section>

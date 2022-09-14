@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import {
   NgbAlertModule,
   NgbModule,
-  NgbOffcanvas,
   NgbPaginationModule,
 } from '@ng-bootstrap/ng-bootstrap';
 import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
@@ -22,6 +21,7 @@ import { PlatformContentComponent } from '../components/platform-content/platfor
 import { PlatformLinksComponent } from '../components/platform-links/platform-links.component';
 import { NavBarSmallComponent } from '../components/nav-bar-small/nav-bar-small.component';
 import { ButtonComponent } from '../components/button/button.component';
+import { TabsComponent } from '../components/tabs/tabs.component';
 
 @NgModule({
   imports: [CommonModule, NgbModule, NgbPaginationModule, NgbAlertModule],
@@ -42,6 +42,7 @@ import { ButtonComponent } from '../components/button/button.component';
     PlatformLinksComponent,
     NavBarSmallComponent,
     ButtonComponent,
+    TabsComponent,
   ],
 
   exports: [
@@ -62,6 +63,7 @@ import { ButtonComponent } from '../components/button/button.component';
     PlatformLinksComponent,
     NavBarSmallComponent,
     ButtonComponent,
+    TabsComponent,
   ],
 })
 export class SharedModule {}

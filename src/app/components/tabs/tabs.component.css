@@ -1,0 +1,64 @@
+.tabs__container {
+  position: relative;
+  min-height: 200px;
+}
+
+.tab {
+  max-width: 349.76px;
+  position: absolute;
+}
+
+.tab4 {
+  transform: rotate(-4deg);
+  z-index: 3;
+  left: 15%;
+  top: -60px;
+}
+
+.tab3 {
+  transform: rotate(2deg);
+  z-index: 2;
+  left: 29%;
+}
+
+.tab2 {
+  transform: rotate(-2deg);
+  z-index: 1;
+  left: 45%;
+  top: -55px;
+}
+
+.tab1 {
+  transform: rotate(4deg);
+  left: 62%;
+}
+
+@media screen and (max-width: 1005px) {
+  .tab {
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .tab4 {
+    left: 0;
+    top: 0;
+  }
+
+  .tab3 {
+    left: 0;
+    top: 0;
+  }
+
+  .tab2 {
+    left: 0;
+    top: 0;
+  }
+
+  .tab1 {
+    left: 0;
+    top: 0;
+  }
+}

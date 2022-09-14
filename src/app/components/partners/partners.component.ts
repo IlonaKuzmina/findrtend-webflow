@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import Brands, { BrandProps } from '../../data/brands';
+import { Component} from '@angular/core';
+import Brands from '../../data/brands';
 
 @Component({
   selector: 'app-partners',
