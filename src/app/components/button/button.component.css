@@ -13,6 +13,13 @@
 
 .btn--green {
   background-color: var(--primary);
+  color: var(--black);
+  border: 1px solid var(--primary);
+  transition: 0.6s;
+}
+
+.btn--green:hover {
+  border: 1px solid var(--primary);
 }
 
 .btn--white {
@@ -26,11 +33,11 @@
   color: var(--off-white);
 }
 
-.btn--black{
-    background-color: var(--black);
-    padding: 16px 32px;
+.btn--black {
+  background-color: var(--black);
+  padding: 16px 32px;
 }
 
-.btn--black:hover{
+.btn--black:hover {
   background-color: var(--black-2);
 }

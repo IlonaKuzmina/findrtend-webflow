@@ -8,51 +8,147 @@
   </div>
 
   <div class="row justify-content-sm-center">
-    <div class="col-xs-12 col-md-4 mt-5">
-      <form class="login__form">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
+    <div class="col-xs-12 col-md-5 mt-5">
+      <form
+        class="row needs-validation register__form needs-validation"
+        novalidate
+        [formGroup]="registerForm"
+      >
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
           <input
+            #nameInput
+            type="text"
+            class="form-control"
+            id="validationCustom01"
             required
+          />
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom02"
+            required
+          />
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label"
+            >Username</label
+          >
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input
+              formControlName="user"
+              type="text"
+              class="form-control"
+              id="validationCustomUsername"
+              aria-describedby="inputGroupPrepend"
+              required
+            />
+            <div
+            class="invalid-tooltip"
+              *ngIf="registerForm.get('user')?.hasError('maxLength')"
+            >
+              Please choose a username. At least 5 characters.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">E-mail</label>
+          <input
+            formControlName="email"
             type="email"
             class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
+            id="validationCustom03"
+            placeholder="example@email.com"
             required
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$"
           />
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
+          <div
+            class="invalid-tooltip"
+            *ngIf="registerForm.get('email')?.hasError('pattern')"
           >
+            Please provide a valid email. Minimum eight characters, at least one letter and one number.
+          </div>
         </div>
-        <div class="d-grid gap-2 mt-5">
+
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">City</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option value="riga">Riga</option>
+            <option value="liepāja">Liepaja</option>
+            <option value="ogre">Ogre</option>
+            <option value="jelgava">Jelgava</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input
+            formControlName="zip"
+            type="text"
+            class="form-control"
+            id="validationCustom05"
+            required
+          />
+          <div
+            class="invalid-tooltip"
+            *ngIf="
+            registerForm.get('zip')?.touched &&
+            registerForm.get('zip')?.hasError('patern')
+            "
+          >
+            Please provide a valid zip. Two letters and for numbers (LV1234).
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              formControlName="terms"
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck"
+            />
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div
+              class="invalid-tooltip"
+              *ngIf="registerForm.get('terms')?.hasError('required')"
+            >
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
           <button
+            (click)="submitHandler()"
             type="submit"
-            class="btn btn-primary rounded-pill border border-0 px-5"
+            [disabled]="!registerForm.invalid"
           >
-            Submit
+            submit
           </button>
+          <!-- <app-button
+                  [disabled]="jokesForm.invalid"
+            title="Sumbit form"
+            color="green"
+          ></app-button> -->
         </div>
       </form>
     </div>
-    <div class="col-sm-4 mt-5">
+
+    <div class="col-sm-3 mt-5">
       <div class="green__block">
         <p class="join__paragraph">
-          Join us on email for
-          <span class="join__paragraph--light">more trending topics</span>
+          Minimize your <span>tabs</span>. Find the <span>trends</span>!
         </p>
       </div>
     </div>

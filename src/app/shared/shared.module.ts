@@ -26,9 +26,19 @@ import { HomePageComponent } from '../pages/home-page/home-page.component';
 import { RegisterPageComponent } from '../pages/register-page/register-page.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { DealSwitchComponent } from '../components/deal-switch/deal-switch.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginPageComponent } from '../pages/login-page/login-page.component';
 
 @NgModule({
-  imports: [CommonModule, NgbModule, NgbPaginationModule, NgbAlertModule, AppRoutingModule],
+  imports: [
+    CommonModule,
+    NgbModule,
+    NgbPaginationModule,
+    NgbAlertModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   declarations: [
     NavBarComponent,
     PartnersComponent,
@@ -48,6 +58,7 @@ import { DealSwitchComponent } from '../components/deal-switch/deal-switch.compo
     ButtonComponent,
     TabsComponent,
     HomePageComponent,
+    LoginPageComponent,
     RegisterPageComponent,
     DealSwitchComponent,
   ],
@@ -72,6 +83,7 @@ import { DealSwitchComponent } from '../components/deal-switch/deal-switch.compo
     ButtonComponent,
     TabsComponent,
     HomePageComponent,
+    LoginPageComponent,
     RegisterPageComponent,
     DealSwitchComponent,
   ],
