@@ -1,2 +1,136 @@
+<div class="card-group text-start gap-4 m-2">
+  <div
+    (click)="clickHandler()"
+    [ngClass]="isClicked ? 'card rounded-4 p-4' : 'card rounded-4 p-4'"
+  >
+    <h2 class="card-title">Personal</h2>
+    <p class="card-text">Special first packet for all</p>
+    <hr />
+    <div class="card-body">
+      <h1 class="card-title card-title--big">
+        $8 <span class="card-title card-title--small">/Month</span>
+      </h1>
 
-  <p>deall-card works!</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Up to 5 page each group
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Up to 10 group page
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> 5 Days group page saved
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <div class="d-grid gap-2">
+        <button
+          class="btn btn-primary rounded-pill green border border-0 p-2"
+          type="button"
+        >
+          Start free trial
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    (click)="clickHandler()"
+    [ngClass]="
+      isClicked ? 'card rounded-4 p-4 card__clicked' : 'card rounded-4 p-4'
+    "
+  >
+    <h2 class="card-title">Regular</h2>
+    <p class="card-text">Recommended for personal pro</p>
+    <hr />
+    <div class="card-body">
+      <h1 class="card-title card-title--big">
+        $20 <span class="card-title card-title--small">/Month</span>
+      </h1>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Up to 15 page each group
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Download page up to 20
+          page
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Up to 10 group page
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> 15 Days group page saved
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <div *ngIf="isClicked" class="d-grid gap-2">
+        <button
+          class="btn btn-primary rounded-pill black border border-0 p-2"
+          type="button"
+        >
+          Start free trial
+        </button>
+      </div>
+
+      <div *ngIf="!isClicked" class="d-grid gap-2">
+        <button
+          class="btn btn-primary rounded-pill green border border-0 p-2"
+          type="button"
+        >
+          Start free trial
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    (click)="clickHandler()"
+    [ngClass]="isClicked ? 'card rounded-4 p-4 ' : 'card rounded-4 p-4'"
+  >
+    <h2 class="card-title">Premium</h2>
+    <p class="card-text">Packet for Startup & Company</p>
+    <hr />
+    <div class="card-body">
+      <h1 class="card-title card-title--big">
+        $48 <span class="card-title card-title--small">/Month</span>
+      </h1>
+
+      <ul class="list-group list-group-flush text-start">
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Unlimited group pages
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Unlimited download page
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Unlimited page each
+          group
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Customize sorting group
+          pages
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> Customize group page
+          name
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/Icon/list.svg" /> 30 Days group page saved
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <div class="d-grid gap-2">
+        <button
+          class="btn btn-primary rounded-pill green border border-0 p-2"
+          type="button"
+        >
+          Start free trial
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

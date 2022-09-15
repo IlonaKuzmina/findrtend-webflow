@@ -1,4 +1,5 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   styleUrls: ['./nav-bar.component.css'],
@@ -6,4 +7,5 @@ import { Component} from '@angular/core';
   templateUrl: './nav-bar.component.html',
 })
 export class NavBarComponent {
+  constructor(private router: Router) {}
 }

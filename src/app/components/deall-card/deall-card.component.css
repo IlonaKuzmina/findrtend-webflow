@@ -1,0 +1,70 @@
+.card-group {
+  background: var(--black);
+}
+
+.card {
+  min-height: 640px;
+}
+
+.card__clicked {
+  background-color: var(--primary);
+}
+
+.black {
+  background-color: var(--black);
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.green {
+  background-color: var(--primary);
+  color: var(--black);
+}
+
+.card-title {
+  font-size: 36px;
+  line-height: 100%;
+}
+
+.card-text {
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.card-title--big {
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.card-title--small {
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.card-footer {
+  background-color: transparent;
+  border: none;
+}
+
+.list-group-item {
+  border: none;
+  background-color: transparent;
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .card-title {
+    font-size: 32px;
+  }
+
+  .card-title--big {
+    font-size: 60px;
+  }
+
+  .card {
+    min-height: 602px;
+  }
+}

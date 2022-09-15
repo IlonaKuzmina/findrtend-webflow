@@ -1,0 +1,86 @@
+.btn__wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.container {
+  background-color: var(--black-2);
+  height: 100%;
+  max-width: 1440px;
+  position: relative;
+}
+
+.login__form {
+  color: var(--off-white);
+  font-family: "Effra 700";
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--black);
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  opacity: 0.8;
+  color: var(--black);
+}
+
+.login__form {
+  background: url(./../../../assets/Bg-hero/website.png);
+  padding: 30px;
+  border-radius: 16px;
+  min-height: 350px;
+  min-width: 200px;
+}
+
+.green__block {
+  background-color: var(--primary);
+  min-width: 100%;
+  min-height: 350px;
+  border-radius: 16px;
+  min-width: 200px;
+  padding: 40px;
+  text-align: center;
+}
+
+.join__paragraph,
+.join__paragraph--light {
+  font-size: 34px;
+  color: var(--black);
+  font-family: "Effra 900";
+}
+
+.join__paragraph--light {
+  color: var(--green-2);
+}
+
+.tab {
+  max-width: 180px;
+}
+
+.tab4 {
+  transform: rotate(-4deg);
+}
+
+.tab3 {
+  transform: rotate(2deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .join__paragraph,
+  .join__paragraph--light {
+    font-size: 25px;
+  }
+
+  .tab {
+    max-width: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .green__block {
+    display: none;
+  }
+}

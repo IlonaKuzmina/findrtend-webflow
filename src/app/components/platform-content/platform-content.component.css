@@ -1,18 +1,19 @@
 .tweet__image {
-  max-width: 100%;
+  max-width:80%;
   margin: 20px 0px;
 }
 
 .platform__contnet--wrapper {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) {
   .platform__contnet--wrapper {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
 
   .tweet__image {
+    max-width:100%;
     margin: 8px 0px;
   }
 }

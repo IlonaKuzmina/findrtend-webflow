@@ -1,0 +1,33 @@
+<div class="switch__container">
+  <div class="switch__wrapper">
+    <label [ngClass]="yearlyDeal ? 'switch__title' : 'switch__title--light'"
+      >Monthly</label
+    >
+    <label class="switch">
+      <input type="checkbox" checked (change)="toggleSwitch()" />
+      <span class="slider round"></span>
+    </label>
+    <label [ngClass]="yearlyDeal ? 'switch__title--light' : 'switch__title'"
+      >Yearly</label
+    >
+  </div>
+
+  <div class="arrow__block arrow__block--big">
+    <span class="arrow__text">Save 10% per month</span> <br />
+    <img
+      class="ligt__arrow"
+      src="./../../../assets/Icon/Arrow light.png"
+      alt="arrow"
+    />
+  </div>
+
+  <div class="arrow__block arrow__block--small">
+    <img
+      class="ligt__arrow"
+      src="./../../../assets/Icon/Arrow light.png"
+      alt="arrow"
+    />
+    <br />
+    <span class="arrow__text">Save 10% per month</span> <br />
+  </div>
+</div>

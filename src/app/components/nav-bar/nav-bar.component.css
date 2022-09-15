@@ -26,6 +26,10 @@
   margin: 0 auto;
 }
 
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
 @media screen and (max-width: 768px) {
   .nav__container {
     padding: 24px 18px;

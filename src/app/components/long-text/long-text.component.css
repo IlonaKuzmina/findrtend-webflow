@@ -4,14 +4,19 @@
   margin: 0 auto;
 }
 
+.container{
+padding: 0px;
+}
+
 .long__text {
-  font-weight: 700;
+  font-family: "Effra 700";
   font-size: 64px;
   line-height: 76px;
   color: var(--black);
 }
 
 .long__text--grey {
+  font-family: "Effra 700";
   color: var(--grey-2);
 }
 
@@ -24,6 +29,6 @@
 
 @media screen and (max-width: 1000px) {
   .text__container {
-    padding: 80px 8px;
+    padding: 80px 18px;
   }
 }

@@ -8,6 +8,22 @@
   align-items: center;
 }
 
+.open__title {
+  font-family: "Effra 700";
+  font-size: 72px;
+  line-height: 86px;
+  color: var(--black);
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .open__title {
+    font-size: 36px;
+    line-height: 112%;
+    margin-bottom: 32px;
+  }
+}
+
 .open__paragraph {
   font-size: 18px;
   line-height: 150%;
@@ -97,6 +113,10 @@
     font-size: 12px;
     line-height: 12px;
   }
+
+  .container {
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -105,6 +125,7 @@
   }
 
   .open__paragraph {
+    max-width: 286px;
     font-size: 14px;
   }
 }

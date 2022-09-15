@@ -20,15 +20,25 @@
         <a class="nav-link" href="#">Solution</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a
+          class="nav-link"
+          href="#"
+          routerLink="home/register"
+          routerLinkActive="btn__home-active"
+          >Features</a
+        >
       </li>
     </ul>
   </div>
 
   <div class="collapse navbar-collapse">
     <div class="">
-      <app-button title="Login"></app-button>
-      <app-button title="Register" color="white"></app-button>
+      <app-button title="Login"  [routerLink]="['/login']"></app-button>
+      <app-button
+        title="Register"
+        color="white"
+        [routerLink]="['/register']"
+      ></app-button>
     </div>
   </div>
   <app-nav-bar-small></app-nav-bar-small>

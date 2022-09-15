@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-deall-card',
   templateUrl: './deall-card.component.html',
-  styleUrls: ['./deall-card.component.css']
+  styleUrls: ['./deall-card.component.css'],
 })
-export class DeallCardComponent implements OnInit {
+export class DeallCardComponent  {
+  isClicked: boolean = true;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  clickHandler(): void {
+    this.isClicked = !this.isClicked;
   }
-
 }

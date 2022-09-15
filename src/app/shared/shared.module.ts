@@ -22,9 +22,13 @@ import { PlatformLinksComponent } from '../components/platform-links/platform-li
 import { NavBarSmallComponent } from '../components/nav-bar-small/nav-bar-small.component';
 import { ButtonComponent } from '../components/button/button.component';
 import { TabsComponent } from '../components/tabs/tabs.component';
+import { HomePageComponent } from '../pages/home-page/home-page.component';
+import { RegisterPageComponent } from '../pages/register-page/register-page.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { DealSwitchComponent } from '../components/deal-switch/deal-switch.component';
 
 @NgModule({
-  imports: [CommonModule, NgbModule, NgbPaginationModule, NgbAlertModule],
+  imports: [CommonModule, NgbModule, NgbPaginationModule, NgbAlertModule, AppRoutingModule],
   declarations: [
     NavBarComponent,
     PartnersComponent,
@@ -43,6 +47,9 @@ import { TabsComponent } from '../components/tabs/tabs.component';
     NavBarSmallComponent,
     ButtonComponent,
     TabsComponent,
+    HomePageComponent,
+    RegisterPageComponent,
+    DealSwitchComponent,
   ],
 
   exports: [
@@ -64,6 +71,9 @@ import { TabsComponent } from '../components/tabs/tabs.component';
     NavBarSmallComponent,
     ButtonComponent,
     TabsComponent,
+    HomePageComponent,
+    RegisterPageComponent,
+    DealSwitchComponent,
   ],
 })
 export class SharedModule {}

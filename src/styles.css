@@ -12,8 +12,18 @@
 }
 
 @font-face {
-  font-family: "Effra";
-  src: url("./assets/Fonts/EffraVF_Trial_Wght.ttf");
+  font-family: "Effra 900";
+  src: url("./assets/Fonts/Effra_Trial_Blk.ttf");
+}
+
+@font-face {
+  font-family: "Effra 700";
+  src: url("./assets/Fonts/Effra_Trial_Bd.ttf");
+}
+
+@font-face {
+  font-family: "Effra 400";
+  src: url("./assets/Fonts/Effra_Trial_Rg.ttf");
 }
 
 @font-face {
@@ -21,16 +31,10 @@
   src: url("./assets/Fonts/GoodDog-New-W00-Regular.ttf");
 }
 
-.content__wrapper {
-  padding: 140px;
-}
-
-@media screen and (max-width: 1000px) {
-  .content__wrapper {
-    padding: 80px 8px;
-  }
-}
-
 * {
-  font-family: Effra, sans-serif;
+  font-family: "Effra 400", sans-serif;
+}
+
+body, html {
+  height: 100%;
 }

@@ -9,7 +9,7 @@
 .join__paragraph--light {
   font-size: 72px;
   color: var(--black);
-  font-weight: 900;
+  font-family: "Effra 900";
   line-height: 112%;
 }
 
@@ -22,9 +22,11 @@
     padding: 80px 8px;
   }
 
+  .container {
+    padding: 0px;
+  }
   .join__paragraph,
-.join__paragraph--light {
-  font-size: 36px;
-}
-
+  .join__paragraph--light {
+    font-size: 36px;
+  }
 }

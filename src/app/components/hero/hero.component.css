@@ -12,7 +12,7 @@
 
 .hero__title {
   color: var(--off-white);
-  font-weight: 900;
+  font-family: "Effra 900";
   font-size: 72px;
   line-height: 112%;
   margin-bottom: 24px;
@@ -104,6 +104,7 @@
   }
 
   .hero__title {
+    padding: 0 15px;
     font-size: 36px;
   }
 

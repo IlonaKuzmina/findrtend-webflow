@@ -1,13 +1,25 @@
 .deal__container {
-    background-color: var(--black);
-    max-width: 1440px;
-    padding: 140px;
-    margin: 0 auto;
+  background-color: var(--black);
+  max-width: 1440px;
+  padding: 140px;
+  margin: 0 auto;
+}
+
+.deal__title {
+  font-family: "Effra 700";
+  color: var(--off-white);
+  font-size: 64px;
+  line-height: 76px;
+}
+
+@media screen and (max-width: 1000px) {
+  .deal__container {
+    padding: 80px 8px;
   }
-  
-  @media screen and (max-width: 1000px) {
-    .deal__container {
-      padding: 80px 8px;
-    }
+
+  .deal__title {
+    font-family: "Effra 900";
+    font-size: 36px;
+    line-height: 43px;
   }
-  
+}

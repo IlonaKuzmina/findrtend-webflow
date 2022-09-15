@@ -31,10 +31,21 @@
         <a class="nav-link" href="#">Features</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a
+          class="nav-link"
+          href="#"
+          [routerLink]="['/login']"
+          (click)="offcanvas.dismiss('Cross click')"
+          >Login</a
+        >
       </li>
       <li class="nav-item">
-        <app-button title="Register" color="white"></app-button>
+        <app-button
+          title="Register"
+          color="white"
+          [routerLink]="['/register']"
+          (click)="offcanvas.dismiss('Cross click')"
+        ></app-button>
       </li>
     </ul>
   </div>

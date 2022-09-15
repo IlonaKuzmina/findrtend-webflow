@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="btn__wrapper">
+    <app-button
+      [routerLink]="['/home']"
+      title="Back to Home"
+      color="green"
+    ></app-button>
+  </div>
+
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-5">
+      <div class="green__block">
+        <p class="join__paragraph">
+          Join us on email for
+          <span class="join__paragraph--light">more trending topics</span>
+        </p>
+        <img
+          class="tab tab4"
+          src="./../../../assets/Images/Tabs/tab4.png"
+          alt=""
+        />
+        <img
+          class="tab tab3"
+          src="./../../../assets/Images/Tabs/tab3.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 mt-5">
+      <form class="login__form">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            required
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            required
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <div class="d-grid gap-2 mt-5">
+          <button
+            type="submit"
+            class="btn btn-primary rounded-pill border border-0 px-5"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

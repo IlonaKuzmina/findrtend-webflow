@@ -1,0 +1,14 @@
+.dark__container {
+    background-image: url("./../../../assets/Bg-hero/website.png");
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    /* padding-bottom: 30px; */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dark__container {
+      /* padding-bottom: 40px; */
+    }
+  }
+  
