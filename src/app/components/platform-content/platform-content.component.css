@@ -1,5 +1,5 @@
 .tweet__image {
-  max-width:80%;
+  max-width: 80%;
   margin: 20px 0px;
 }
 
@@ -13,7 +13,7 @@
   }
 
   .tweet__image {
-    max-width:100%;
+    max-width: 100%;
     margin: 8px 0px;
   }
 }

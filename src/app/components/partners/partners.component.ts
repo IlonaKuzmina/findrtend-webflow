@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import Brands from '../../data/brands';
 
 @Component({
@@ -7,5 +7,5 @@ import Brands from '../../data/brands';
   styleUrls: ['./partners.component.css'],
 })
 export class PartnersComponent {
-brands = Brands;
+  brands = Brands;
 }

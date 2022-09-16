@@ -6,8 +6,8 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .container{
-    padding:0px;
+  .container {
+    padding: 0px;
   }
   .platform__container {
     padding: 80px 8px;

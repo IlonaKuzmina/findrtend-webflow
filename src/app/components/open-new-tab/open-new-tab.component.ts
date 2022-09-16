@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-open-new-tab',
   templateUrl: './open-new-tab.component.html',
-  styleUrls: ['./open-new-tab.component.css']
+  styleUrls: ['./open-new-tab.component.css'],
 })
-export class OpenNewTabComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class OpenNewTabComponent {}
