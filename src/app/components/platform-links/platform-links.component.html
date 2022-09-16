@@ -1,8 +1,19 @@
-<div class="links__wrapper">
-  <div *ngFor="let platform of platforms" class="item">
-  <div class="link__wrapper">
-    <img src="{{ platform.image }}" alt="{{ platform.name }}" />
+<div class="container__fluid">
+  <div class="slider__wrapper">
+    <div class="slider__main">
+      <div *ngFor="let platform of platforms" class="link">
+        <div class="link__wrapper">
+          <img
+            class="link__image"
+            src="{{ platform.image }}"
+            alt="{{ platform.name }}"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="btn__area">
+      <button class="next__btn" appNextBtn></button>
+    </div>
   </div>
 </div>
-</div>
-

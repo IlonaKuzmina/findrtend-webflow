@@ -34,16 +34,15 @@ export class RegisterPageComponent implements OnInit, AfterViewInit {
     }
   }
 
-  buildFrom(): void {
+  private buildFrom(): void {
     this.registerForm = this.fb.group({
-      user: ['', [Validators.maxLength(5)]],
-      email: ['', [Validators.pattern('^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$')]],
+      user: ['', [Validators.minLength(5)]],
+      email: ['', [Validators.email]],
       zip: ['', [Validators.pattern('[A-Z]{2}[0-9]{4}')]],
-      terms: ['', [Validators.required]],
     });
   }
 
-  focusInputElement(): void {
+  private focusInputElement(): void {
     this.nameInput?.nativeElement.focus();
   }
 }

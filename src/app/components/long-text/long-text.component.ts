@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-long-text',
   templateUrl: './long-text.component.html',
-  styleUrls: ['./long-text.component.css']
+  styleUrls: ['./long-text.component.css'],
 })
-export class LongTextComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class LongTextComponent {}

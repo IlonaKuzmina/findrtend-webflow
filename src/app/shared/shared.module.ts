@@ -7,7 +7,7 @@ import {
 } from '@ng-bootstrap/ng-bootstrap';
 import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
 import { BestDealComponent } from '../components/best-deal/best-deal.component';
-import { DeallCardComponent } from '../components/deall-card/deall-card.component';
+import { DeallCardComponent } from '../components/deal-card/deal-card.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { HeroComponent } from '../components/hero/hero.component';
 import { JoinUsComponent } from '../components/join-us/join-us.component';
@@ -28,6 +28,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { DealSwitchComponent } from '../components/deal-switch/deal-switch.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginPageComponent } from '../pages/login-page/login-page.component';
+import { NextBtnDirective } from '../components/platform-links/next-btn.directive';
 
 @NgModule({
   imports: [
@@ -61,6 +62,7 @@ import { LoginPageComponent } from '../pages/login-page/login-page.component';
     LoginPageComponent,
     RegisterPageComponent,
     DealSwitchComponent,
+    NextBtnDirective,
   ],
 
   exports: [
@@ -86,6 +88,7 @@ import { LoginPageComponent } from '../pages/login-page/login-page.component';
     LoginPageComponent,
     RegisterPageComponent,
     DealSwitchComponent,
+    NextBtnDirective,
   ],
 })
 export class SharedModule {}

@@ -1,17 +1,17 @@
 <div class="container">
   <div class="btn__wrapper">
-    <app-button
+    <button
       [routerLink]="['/home']"
-      title="Back to Home"
-      color="green"
-    ></app-button>
+      class="btn btn-primary rounded-pill border border-1 px-2"
+    >
+      Back to Home
+    </button>
   </div>
 
   <div class="row justify-content-sm-center">
     <div class="col-xs-12 col-md-5 mt-5">
       <form
-        class="row needs-validation register__form needs-validation"
-        novalidate
+        class="row needs-validation register__form"
         [formGroup]="registerForm"
       >
         <div class="col-md-4">
@@ -50,8 +50,12 @@
               required
             />
             <div
-            class="invalid-tooltip"
-              *ngIf="registerForm.get('user')?.hasError('maxLength')"
+              class="badge bg-outline-secondary text-wrap mw-30"
+              style="width: 10rem"
+              *ngIf="
+                registerForm.get('user')?.invalid &&
+                registerForm.get('user')?.touched
+              "
             >
               Please choose a username. At least 5 characters.
             </div>
@@ -69,10 +73,14 @@
             required
           />
           <div
-            class="invalid-tooltip"
-            *ngIf="registerForm.get('email')?.hasError('pattern')"
+            class="badge bg-outline-secondary text-wrap top-10 start-5 mw-100"
+            style="width: 13rem"
+            *ngIf="
+              registerForm.get('email')?.invalid &&
+              registerForm.get('email')?.touched
+            "
           >
-            Please provide a valid email. Minimum eight characters, at least one letter and one number.
+            Please provide a valid email.
           </div>
         </div>
 
@@ -97,13 +105,15 @@
             required
           />
           <div
-            class="invalid-tooltip"
+            class="badge bg-outline-secondary text-wrap top-10 start-5 mw-100"
+            style="width: 6rem"
+            placement="bottom"
             *ngIf="
-            registerForm.get('zip')?.touched &&
-            registerForm.get('zip')?.hasError('patern')
+              registerForm.get('zip')?.touched &&
+              registerForm.get('zip')?.invalid
             "
           >
-            Please provide a valid zip. Two letters and for numbers (LV1234).
+            Provide a valid zip - two letters and for numbers (LV1234).
           </div>
         </div>
 
@@ -119,28 +129,15 @@
             <label class="form-check-label" for="invalidCheck">
               Agree to terms and conditions
             </label>
-            <div
-              class="invalid-tooltip"
-              *ngIf="registerForm.get('terms')?.hasError('required')"
-            >
-              You must agree before submitting.
-            </div>
           </div>
         </div>
 
         <div class="col-12">
           <button
-            (click)="submitHandler()"
-            type="submit"
-            [disabled]="!registerForm.invalid"
+            class="btn btn-primary rounded-pill border border-0 px-5 mt-4"
           >
-            submit
+            Submit
           </button>
-          <!-- <app-button
-                  [disabled]="jokesForm.invalid"
-            title="Sumbit form"
-            color="green"
-          ></app-button> -->
         </div>
       </form>
     </div>

@@ -43,9 +43,26 @@
   color: var(--black-2);
 }
 
+.form-check {
+  margin-top: 20px;
+}
+
+.btn {
+  font-family: "Effra 700";
+  background-color: var(--primary);
+  color: var(--black);
+  border: 1px solid var(--primary);
+}
+
+.btn:hover {
+  background-color: var(--black-2);
+  color: var(--primary);
+  transition: 0.6s;
+}
+
 @media screen and (max-width: 1000px) {
   .join__paragraph {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 

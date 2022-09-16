@@ -1,7 +1,29 @@
-.links__wrapper{
-  height: max-content;
-  height: 124px;
+.container__fluid {
+  min-width: 320px;
+  max-width: 100%;
+  padding: 17px 0px;
   margin-bottom: 50px;
+}
+
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 140px;
+}
+
+.slider__main {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.link {
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  padding: 5px 0px;
 }
 
 .link__wrapper {
@@ -10,17 +32,76 @@
   width: min-content;
   padding: 32px;
   display: inline-block;
-  margin: 8px;
+  margin: 12px;
 }
 
-.item {
-  display: inline-block;
-  height: 50px;
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  padding: 5px 0px;
+.link__image {
+  width: 60px;
 }
 
-@media screen and (max-width: 501px) {
+.link__wrapper:hover {
+  background-color: var(--primary);
+}
+
+.btn__area {
+  width: 44px;
+  height: 44px;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.next__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 50px;
+  height: 100%;
+}
+
+.next__btn:hover {
+  color: var(--black);
+  background-color: var(--grey-2);
+  opacity: 0.5;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 901px) {
+  .link__wrapper {
+    padding: 24px;
+    margin: 10px;
+  }
+
+  .link__image {
+    width: 45px;
+  }
+
+  .next__btn {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .link__wrapper {
+    padding: 16px;
+    margin: 8px;
+  }
+
+  .link__image {
+    width: 31px;
+  }
+
+  .container__fluid {
+    margin-bottom: 32px;
+  }
+
+  .slider__wrapper {
+    height: 80px;
+  }
+
+  .next__btn {
+    width: 30px;
+  }
 }

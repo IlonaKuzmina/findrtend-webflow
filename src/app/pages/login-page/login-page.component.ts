@@ -1,4 +1,10 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-login-page',
@@ -8,7 +14,6 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 export class LoginPageComponent implements OnInit, AfterViewInit {
   @ViewChild('mailInput') mailInput: ElementRef | undefined;
 
-
   ngOnInit(): void {
     this.focusInputElement();
   }
@@ -16,7 +21,6 @@ export class LoginPageComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.focusInputElement();
   }
-
 
   focusInputElement(): void {
     this.mailInput?.nativeElement.focus();

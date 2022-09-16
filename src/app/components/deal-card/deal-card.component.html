@@ -1,7 +1,11 @@
 <div class="card-group text-start gap-4 m-2">
   <div
-    (click)="clickHandler()"
-    [ngClass]="isClicked ? 'card rounded-4 p-4' : 'card rounded-4 p-4'"
+    (click)="clickHandler('personal')"
+    [ngClass]="
+      selectedPersonal
+        ? 'card rounded-4 p-4 card__clicked'
+        : 'card rounded-4 p-4'
+    "
   >
     <h2 class="card-title">Personal</h2>
     <p class="card-text">Special first packet for all</p>
@@ -23,8 +27,18 @@
         </li>
       </ul>
     </div>
+
     <div class="card-footer">
-      <div class="d-grid gap-2">
+      <div *ngIf="selectedPersonal" class="d-grid gap-2">
+        <button
+          class="btn btn-primary rounded-pill black border border-0 p-2"
+          type="button"
+        >
+          Start free trial
+        </button>
+      </div>
+
+      <div *ngIf="!selectedPersonal" class="d-grid gap-2">
         <button
           class="btn btn-primary rounded-pill green border border-0 p-2"
           type="button"
@@ -36,9 +50,11 @@
   </div>
 
   <div
-    (click)="clickHandler()"
+    (click)="clickHandler('regular')"
     [ngClass]="
-      isClicked ? 'card rounded-4 p-4 card__clicked' : 'card rounded-4 p-4'
+      selectedRegular
+        ? 'card rounded-4 p-4 card__clicked'
+        : 'card rounded-4 p-4'
     "
   >
     <h2 class="card-title">Regular</h2>
@@ -66,7 +82,7 @@
       </ul>
     </div>
     <div class="card-footer">
-      <div *ngIf="isClicked" class="d-grid gap-2">
+      <div *ngIf="selectedRegular" class="d-grid gap-2">
         <button
           class="btn btn-primary rounded-pill black border border-0 p-2"
           type="button"
@@ -75,7 +91,7 @@
         </button>
       </div>
 
-      <div *ngIf="!isClicked" class="d-grid gap-2">
+      <div *ngIf="!selectedRegular" class="d-grid gap-2">
         <button
           class="btn btn-primary rounded-pill green border border-0 p-2"
           type="button"
@@ -87,8 +103,12 @@
   </div>
 
   <div
-    (click)="clickHandler()"
-    [ngClass]="isClicked ? 'card rounded-4 p-4 ' : 'card rounded-4 p-4'"
+    (click)="clickHandler('premium')"
+    [ngClass]="
+      selectedPremium
+        ? 'card rounded-4 p-4 card__clicked'
+        : 'card rounded-4 p-4'
+    "
   >
     <h2 class="card-title">Premium</h2>
     <p class="card-text">Packet for Startup & Company</p>
@@ -123,7 +143,16 @@
       </ul>
     </div>
     <div class="card-footer">
-      <div class="d-grid gap-2">
+      <div *ngIf="selectedPremium" class="d-grid gap-2">
+        <button
+          class="btn btn-primary rounded-pill black border border-0 p-2"
+          type="button"
+        >
+          Start free trial
+        </button>
+      </div>
+
+      <div *ngIf="!selectedPremium" class="d-grid gap-2">
         <button
           class="btn btn-primary rounded-pill green border border-0 p-2"
           type="button"
