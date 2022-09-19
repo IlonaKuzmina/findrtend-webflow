@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   selector: 'app-nav-bar-small',
   templateUrl: './nav-bar-small.component.html',
   styleUrls: ['./nav-bar-small.component.css'],
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None
 })
 export class NavBarSmallComponent {
   closeResult!: string;

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-deall-card',
   templateUrl: './deal-card.component.html',
-  styleUrls: ['./deal-card.component.css'],
+  styleUrls: ['./deal-card.component.css']
 })
 export class DeallCardComponent {
   selectedPersonal = false;

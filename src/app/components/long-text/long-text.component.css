@@ -9,14 +9,14 @@
 }
 
 .long__text {
-  font-family: "Effra 700";
+  font-family: 'Effra 700';
   font-size: 64px;
   line-height: 76px;
   color: var(--black);
 }
 
 .long__text--grey {
-  font-family: "Effra 700";
+  font-family: 'Effra 700';
   color: var(--grey-2);
 }
 

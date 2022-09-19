@@ -12,7 +12,7 @@
 
 .hero__title {
   color: var(--off-white);
-  font-family: "Effra 900";
+  font-family: 'Effra 900';
   font-size: 72px;
   line-height: 112%;
   margin-bottom: 24px;
@@ -42,7 +42,7 @@
 }
 
 .arrow__text {
-  font-family: "GoodDog New";
+  font-family: 'GoodDog New';
   color: white;
   font-size: 14px;
   line-height: 14px;

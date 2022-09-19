@@ -14,7 +14,7 @@
 }
 
 .arrow__text {
-  font-family: "GoodDog New";
+  font-family: 'GoodDog New';
   color: var(--off-white);
   font-size: 14px;
   line-height: 14px;
@@ -76,7 +76,7 @@
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 36px;
   height: 36px;
   right: 10px;
@@ -115,7 +115,7 @@ input:checked + .slider:before {
   }
 
   .arrow__text {
-    font-family: "GoodDog New";
+    font-family: 'GoodDog New';
     color: var(--off-white);
     font-size: 14px;
     line-height: 14px;

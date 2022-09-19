@@ -3,14 +3,14 @@ import {
   Component,
   ElementRef,
   OnInit,
-  ViewChild,
+  ViewChild
 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register-page',
   templateUrl: './register-page.component.html',
-  styleUrls: ['./register-page.component.css'],
+  styleUrls: ['./register-page.component.css']
 })
 export class RegisterPageComponent implements OnInit, AfterViewInit {
   @ViewChild('nameInput') nameInput: ElementRef | undefined;
@@ -20,7 +20,6 @@ export class RegisterPageComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.buildFrom();
     this.focusInputElement();
-    console.log(this.registerForm.errors);
   }
 
   ngAfterViewInit(): void {
@@ -38,7 +37,7 @@ export class RegisterPageComponent implements OnInit, AfterViewInit {
     this.registerForm = this.fb.group({
       user: ['', [Validators.minLength(5)]],
       email: ['', [Validators.email]],
-      zip: ['', [Validators.pattern('[A-Z]{2}[0-9]{4}')]],
+      zip: ['', [Validators.pattern('[A-Z]{2}[0-9]{4}')]]
     });
   }
 

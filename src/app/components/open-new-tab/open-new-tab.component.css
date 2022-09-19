@@ -9,7 +9,7 @@
 }
 
 .open__title {
-  font-family: "Effra 700";
+  font-family: 'Effra 700';
   font-size: 72px;
   line-height: 86px;
   color: var(--black);
@@ -32,7 +32,7 @@
 }
 
 .arrow__text {
-  font-family: "GoodDog New";
+  font-family: 'GoodDog New';
   font-size: 14px;
   line-height: 14px;
 }

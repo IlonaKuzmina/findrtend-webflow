@@ -6,7 +6,7 @@
 }
 
 .deal__title {
-  font-family: "Effra 700";
+  font-family: 'Effra 700';
   color: var(--off-white);
   font-size: 64px;
   line-height: 76px;
@@ -18,7 +18,7 @@
   }
 
   .deal__title {
-    font-family: "Effra 900";
+    font-family: 'Effra 900';
     font-size: 36px;
     line-height: 43px;
   }

@@ -1,5 +1,5 @@
 .title {
-  font-family: "Effra 700";
+  font-family: 'Effra 700';
   font-size: 64px;
   line-height: 76px;
   color: var(--black);
@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 768px) {
   .title {
-    font-family: "Effra 900";
+    font-family: 'Effra 900';
     font-size: 36px;
     line-height: 43px;
     margin-bottom: 32px;

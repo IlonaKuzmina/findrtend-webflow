@@ -1,9 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-partner-card',
   templateUrl: './partner-card.component.html',
-  styleUrls: ['./partner-card.component.css'],
+  styleUrls: ['./partner-card.component.css']
 })
 export class PartnerCardComponent {
   @Input() image!: string;
